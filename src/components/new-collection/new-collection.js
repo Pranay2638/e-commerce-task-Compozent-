@@ -9,6 +9,7 @@ const NewCollection = () => {
       title: "title 1",
       subTitle: "sub_title",
       price: 1,
+      id: "11",
     },
     {
       image:
@@ -16,6 +17,7 @@ const NewCollection = () => {
       title: "title 2",
       subTitle: "sub_title",
       price: 1,
+      id: "22",
     },
     {
       image:
@@ -23,6 +25,7 @@ const NewCollection = () => {
       title: "title 3",
       subTitle: "sub_title",
       price: 1,
+      id: "33",
     },
     {
       image:
@@ -30,6 +33,7 @@ const NewCollection = () => {
       title: "title 4",
       subTitle: "sub_title",
       price: 1,
+      id: "44",
     },
     {
       image:
@@ -37,6 +41,7 @@ const NewCollection = () => {
       title: "title 5",
       subTitle: "sub_title",
       price: 1,
+      id: "55",
     },
   ];
   return (
@@ -46,6 +51,7 @@ const NewCollection = () => {
         {cards_info.map((item, index) => {
           return (
             <Cards
+              id={item.id}
               key={index}
               image={item.image}
               title={item.title}

@@ -4,12 +4,58 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router";
+import DetailCard from "./components/newdetailCard/detailCard";
+import NewCollection from "./components/new-collection/new-collection";
+
+// const cards_info = [
+//   {
+//     image:
+//       "https://images.unsplash.com/photo-1524095731963-b4e38d1b3329?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//     title: "title 1",
+//     subTitle: "sub_title",
+//     price: 1,
+//     id : "11",
+//   },
+//   {
+//     image:
+//       "https://images.unsplash.com/photo-1524095731963-b4e38d1b3329?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//     title: "title 2",
+//     subTitle: "sub_title",
+//     price: 1,
+//     id : "22",
+//   },
+//   {
+//     image:
+//       "https://images.unsplash.com/photo-1524095731963-b4e38d1b3329?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//     title: "title 3",
+//     subTitle: "sub_title",
+//     price: 1,
+//     id : "33",
+//   },
+//   {
+//     image:
+//       "https://images.unsplash.com/photo-1524095731963-b4e38d1b3329?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//     title: "title 4",
+//     subTitle: "sub_title",
+//     price: 1,
+//     id : "44",
+//   },
+//   {
+//     image:
+//       "https://images.unsplash.com/photo-1524095731963-b4e38d1b3329?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//     title: "title 5",
+//     subTitle: "sub_title",
+//     price: 1,
+//     id : "55",
+//   },
+// ];
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
+      <Route path="/collection/:id" element={<DetailCard products={NewCollection}/>} />
     </Routes>
   </BrowserRouter>
 );
